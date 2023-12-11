@@ -1,4 +1,4 @@
-const sizeController = document.querySelector("#front-size-control");
+const sizeController = document.querySelector("#font-size-control");
 const output = document.querySelector("#text");
 
 function getRandomHExColor() {
@@ -9,5 +9,5 @@ function getRandomHExColor() {
 
 sizeController.addEventListener("input", () => {
   output.style.fontSize = `${sizeController.value}px`;
-  output.style.transition = `font-size 250ms ease, color 250ms ease`;
+  output.style.transition = "font-size 250ms ease, color 250ms ease";
 });
